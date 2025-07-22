@@ -1,18 +1,51 @@
 # Roxie Reginold's Personal Portfolio
 
-A modern, responsive personal portfolio website built with React, TypeScript, and Vite to showcase expertise in Data Science, AI, and Software Development.
+A modern, responsive personal portfolio website built with React 19 and TypeScript to showcase expertise in Data Science, AI, and Software Development.
 
-## About
+## About Roxie
 
-This portfolio showcases Roxie Reginold's professional journey as a Data Scientist at RBC, VP Community at Google Developer Groups TMU, and Computer Science student at Toronto Metropolitan University. The site highlights AI-powered development projects, community leadership, and technical achievements including Google I/O 2025 attendance.
+- **Current Role**: Data Scientist @ RBC (Co-op, Jan 2025 - Present)
+- **Education**: 4th-year Computer Science Co-op student at Toronto Metropolitan University (Sep 2021 - May 2026)
+- **Location**: Toronto, Ontario, Canada
+- **GitHub**: https://github.com/roxie-reginold
+- **LinkedIn**: https://www.linkedin.com/in/roxie-reginold/
 
-## Tech Stack
+## Professional Focus Areas
 
-- **React 19** - Modern React with hooks and functional components
-- **TypeScript** - Type safety and enhanced developer experience
-- **Vite** - Fast build tool and development server
-- **CSS Modules** - Component-scoped styling
-- **ESLint** - Code quality and consistency
+- **Data Science & AI**: Experience with OpenAI and Anthropic LLMs, GenAI demos, AI-powered developer tools
+- **Software Development**: Java, Python, HTML/CSS/JavaScript, Spring Boot, Maven
+- **Machine Learning & AI**: Prompt Engineering, Agentic Systems, "Vibe Coding" patterns
+- **DevOps & Cloud**: Jenkins CI/CD, Red Hat OpenShift, GitHub Actions
+- **Leadership**: VP Community @ Google Developer Groups TMU, Director of Backend Engineering @ BYTE
+
+## Key Achievements
+
+- 🎯 **Google I/O 2025 Attendee**: Selected to attend in-person at Shoreline Amphitheatre, California
+- 📈 **RBC Impact**: Boosted developer productivity by 30% through AI-assisted coding research
+- 🌟 **Community Building**: Grew GDSC TMU community by 1,200+ LinkedIn followers
+- 🏆 **Awards**: Multiple hackathon wins including MetHacks 2022 Best Environmental Hack
+- 👥 **Mentorship**: Guided 25+ co-op students through career development
+
+## Technology Stack
+
+- **Frontend**: React 19, TypeScript 5.8+, CSS3
+- **Build Tool**: Vite 7.0+ (fast development and building)
+- **Styling**: Modern CSS with custom properties and animations
+- **Development**: ESLint 9.30+, TypeScript ESLint
+- **Package Manager**: npm (Node.js 18+ required)
+- **Version Control**: Git with automated staging workflow
+
+## Features
+
+- 🎨 Modern, responsive design
+- 📱 Mobile-first approach
+- ⚡ Fast loading with Vite
+- 🎯 SEO optimized
+- 🌙 Smooth animations and transitions
+- 📊 Interactive project showcases
+- 💼 Professional experience timeline
+- 🛠️ Skills visualization
+- 📞 Contact integration
 
 ## Getting Started
 
@@ -20,100 +53,117 @@ This portfolio showcases Roxie Reginold's professional journey as a Data Scienti
 
 - Node.js 18+ 
 - npm or yarn
-- macOS development environment (recommended)
 
 ### Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/roxie-reginold/personal-portfolio.git
-cd personal-portfolio
-```
+1. Clone the repository:
+\`\`\`bash
+git clone https://github.com/roxie-reginold/portfolio.git
+cd portfolio
+\`\`\`
 
-2. Install dependencies
-```bash
+2. Install dependencies:
+\`\`\`bash
 npm install
-# or
-yarn install
-```
+\`\`\`
 
-3. Start the development server
-```bash
+3. Start the development server:
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-```
+\`\`\`
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser
+4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-### Available Scripts
+### Build for Production
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production (TypeScript compilation + Vite build)
-- `npm run lint` - Run ESLint for code quality checks
-- `npm run preview` - Preview production build locally
+\`\`\`bash
+npm run build
+\`\`\`
+
+### Preview Production Build
+
+\`\`\`bash
+npm run preview
+\`\`\`
 
 ## Project Structure
 
-```
+\`\`\`
 src/
-├── components/         # Reusable UI components
-│   ├── sections/      # Page sections (Hero, About, Experience, etc.)
-│   ├── common/        # Generic components (Button, Card, etc.)
-│   └── layout/        # Layout components (Header, Footer)
-├── data/              # Static data (experiences, projects, skills)
-├── types/             # TypeScript type definitions
-├── styles/            # Global styles and themes
-└── assets/            # Images, icons, documents
-```
+├── components/
+│   ├── layout/          # Navigation, Footer
+│   └── sections/        # Hero, About, Experience, Projects, Skills, Contact
+├── data/               # Static data (experiences, projects, skills, etc.)
+├── types/              # TypeScript type definitions
+├── App.tsx             # Main App component
+├── App.css             # Global styles
+└── main.tsx            # Entry point
+\`\`\`
 
-## Key Features
+## Customization
 
-- **Responsive Design** - Optimized for all device sizes
-- **TypeScript Integration** - Full type safety throughout the application
-- **Modern React Patterns** - Hooks, functional components, and best practices
-- **Performance Optimized** - Code splitting and lazy loading
-- **SEO Friendly** - Meta tags and structured data
-- **Accessibility Compliant** - WCAG guidelines followed
+### Adding New Projects
 
-## Development Environment
+Edit \`src/data/projects.ts\` to add new projects:
 
-### VS Code Configuration
+\`\`\`typescript
+{
+  id: 'project-id',
+  title: 'Project Title',
+  description: 'Brief description',
+  technologies: ['React', 'TypeScript'],
+  category: 'Web Development',
+  featured: true,
+  githubUrl: 'https://github.com/...',
+  liveUrl: 'https://...'
+}
+\`\`\`
 
-The project includes VS Code settings for optimal development experience:
+### Updating Experience
 
-- **TypeScript Auto-Closing Tags**: Disabled for better control over JSX/TSX formatting
-- **ESLint Integration**: Real-time code quality feedback
-- **TypeScript IntelliSense**: Enhanced autocomplete and error detection
+Edit \`src/data/experiences.ts\` to update work experience and achievements.
 
-### Code Quality
+### Modifying Skills
 
-- **ESLint**: Configured with React and TypeScript rules
-- **TypeScript**: Strict mode enabled for better type safety
-- **Consistent Formatting**: Standardized code style across the project
-
-## Portfolio Sections
-
-- **Hero** - Data Scientist & AI Enthusiast introduction
-- **About** - Personal story, TMU education, passion for AI/ML
-- **Experience** - RBC roles, peer advising, community leadership
-- **Projects** - Featured work including AI research, hackathon wins
-- **Skills** - Technical skills (Java, Python, AI/ML) and leadership
-- **Contact** - Professional networking opportunities
+Edit \`src/data/skills.ts\` to update technical skills and proficiency levels.
 
 ## Deployment
 
-The portfolio is optimized for deployment on:
+This portfolio can be deployed to various platforms:
 
-- **Netlify** - Recommended for easy deployment and form handling
-- **Vercel** - Optimized for React applications
-- **GitHub Pages** - Free hosting option
-- **Firebase Hosting** - Google's hosting solution
+- **Netlify**: Connect your GitHub repository for automatic deployments
+- **Vercel**: Optimized for React applications
+- **GitHub Pages**: Free hosting directly from your repository
+- **Firebase Hosting**: Google's hosting solution
 
-## Contributing
+### Deploy to Netlify
 
-This is a personal portfolio project. For suggestions or improvements, please open an issue or submit a pull request.
+1. Build the project: \`npm run build\`
+2. Drag and drop the \`dist\` folder to Netlify
+3. Or connect your GitHub repository for automatic deployments
 
-## License
+## Performance
 
-This project is private and proprietary to Roxie Reginold.
+- ⚡ Vite for fast development and building
+- 🎯 Code splitting and lazy loading
+- 📱 Responsive images and optimized assets
+- 🚀 Modern CSS with efficient animations
+
+## SEO Features
+
+- 📄 Semantic HTML structure
+- 🏷️ Meta tags for social media sharing
+- 🔍 Structured data for better search visibility
+- 📱 Mobile-friendly design
+
+## Contact
+
+Feel free to reach out for collaborations, opportunities, or just to connect!
+
+- **LinkedIn**: [roxie-reginold](https://www.linkedin.com/in/roxie-reginold/)
+- **GitHub**: [roxie-reginold](https://github.com/roxie-reginold)
+- **Email**: roxie.reginold@example.com
+
+---
+
+Built with ❤️ by Roxie Reginold | Data Scientist @ RBC | VP Community @ GDG TMU

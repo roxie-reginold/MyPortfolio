@@ -22,21 +22,15 @@ const Navigation = () => {
     { href: '#contact', label: 'Contact' }
   ];
 
-  const handleNavClick = (href: string) => {
-    setIsMobileMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <div className="nav-brand">
-          <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            Roxie Reginold
-          </a>
+        <div className="nav-brand" onClick={scrollToTop}>
+          <span className="brand-text">Roxie Reginold</span>
         </div>
         
         <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -45,25 +39,30 @@ const Navigation = () => {
               key={item.href}
               href={item.href}
               className="nav-link"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick(item.href);
-              }}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.label}
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            className="nav-link resume-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Resume
+          </a>
         </div>
 
-        <button
+        <div 
           className={`nav-toggle ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle navigation menu"
         >
           <span></span>
           <span></span>
           <span></span>
-        </button>
+        </div>
       </div>
     </nav>
   );
