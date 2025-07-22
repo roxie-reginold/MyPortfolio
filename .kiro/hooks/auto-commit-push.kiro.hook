@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Auto Commit & Push",
+  "description": "Automatically commits and pushes changes to GitHub when features are completed",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A feature has been completed. Please commit the current changes with an appropriate commit message describing what was implemented, then push the changes to the GitHub repository. Make sure to stage all relevant files and write a clear, descriptive commit message that follows conventional commit standards."
+  }
+}
