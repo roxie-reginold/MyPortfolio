@@ -86,6 +86,25 @@ npm run build
 npm run preview
 \`\`\`
 
+### Development Workflow
+
+The project includes an automated development workflow:
+
+\`\`\`bash
+# Quick setup and development (automated via Kiro)
+npm create vite@latest . -- --template react-ts
+npm install
+npm run dev
+git add .  # Automated staging for version control
+\`\`\`
+
+### Available Scripts
+
+- \`npm run dev\` - Start development server on http://localhost:5173
+- \`npm run build\` - Build for production (includes TypeScript compilation)
+- \`npm run lint\` - Run ESLint for code quality checks
+- \`npm run preview\` - Preview production build locally
+
 ## Project Structure
 
 \`\`\`
