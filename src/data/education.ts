@@ -3,11 +3,11 @@ import type { Education } from '../types/Experience';
 export const education: Education[] = [
   {
     id: 'tmu-cs-coop',
-    degree: 'Bachelor of Science in Computer Science (Co-op Program)',
-    institution: 'Toronto Metropolitan University',
+    degree: 'BSc, Computer Science (Co-op)',
+    institution: 'Toronto Metropolitan University (formerly Ryerson)',
     location: 'Toronto, ON',
     startDate: 'September 2021',
-    endDate: 'May 2026',
+    endDate: 'April 2026',
     relevantCourses: [
       'Data Structures and Algorithms',
       'Machine Learning and AI',
@@ -19,6 +19,10 @@ export const education: Education[] = [
       'Software Architecture',
       'Data Mining',
       'Human-Computer Interaction'
+    ],
+    additionalInfo: [
+      'Google Developer Groups on Campus TMU: Vice President of Community',
+      'BYTE (Build Your Technical Experience Club): Director of Backend Engineering'
     ]
   }
 ];

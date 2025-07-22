@@ -49,6 +49,18 @@ export const projects: Project[] = [
     endDate: 'Dec 2024'
   },
   {
+    id: 'spotify-recommendation-system',
+    title: 'Spotify Song Recommendation System',
+    description: 'Architected an AI-powered music discovery platform by integrating Google\'s Gemini 2.0 Flash and the Spotify API',
+    longDescription: 'Architected an AI-powered music discovery platform by integrating Google\'s Gemini 2.0 Flash and the Spotify API to deliver personalized song recommendations, complete with album artwork and direct streaming links via a clean and intuitive interface.',
+    technologies: ['Python', 'Flask', 'Streamlit', 'Spotify API', 'Google Gemini'],
+    category: 'AI/ML',
+    featured: true,
+    achievements: ['Integrated cutting-edge AI with music streaming APIs', 'Created intuitive user interface for music discovery'],
+    githubUrl: 'https://github.com/roxie-reginold',
+    startDate: 'Dec 2024'
+  },
+  {
     id: 'gdg-community-platform',
     title: 'GDG TMU Community Platform',
     description: 'Built community engagement tools for Google Developer Groups TMU',

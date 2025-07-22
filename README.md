@@ -21,18 +21,23 @@ A modern, responsive personal portfolio website built with React 19 and TypeScri
 ## Key Achievements
 
 - 🎯 **Google I/O 2025 Attendee**: Selected to attend in-person at Shoreline Amphitheatre, California
-- 📈 **RBC Impact**: Boosted developer productivity by 30% through AI-assisted coding research
+- 📈 **RBC Impact**: Boosted developer productivity by 30% through AI-assisted coding research across 3 co-op terms
+- 🤖 **AI Innovation**: Evaluated 15+ Agentic AI developer tools using SWE-bench tasks and created standardized "vibe-coding" patterns
+- 🚀 **System Performance**: Increased system performance by 20% and reduced downtime by 15% through OpenShift deployments
+- 🔧 **Process Optimization**: Reduced unused Git branches by 50%+ through automated DevOps solutions
+- 📊 **Data Analytics**: Improved decision-making efficiency by 30% at Equinix through dynamic dashboard development
 - 🌟 **Community Building**: Grew GDSC TMU community by 1,200+ LinkedIn followers
 - 🏆 **Awards**: Multiple hackathon wins including MetHacks 2022 Best Environmental Hack
 - 👥 **Mentorship**: Guided 25+ co-op students through career development
 
 ## Technology Stack
 
-- **Frontend**: React 19, TypeScript 5.8+, CSS3
-- **Build Tool**: Vite 7.0+ (fast development and building)
+- **Frontend**: React 19.1.0, TypeScript 5.8+, CSS3
+- **Build Tool**: Vite 7.0.4 (fast development and building)
 - **Styling**: Modern CSS with custom properties and animations
-- **Development**: ESLint 9.30+, TypeScript ESLint
+- **Development**: ESLint 9.30.1, TypeScript ESLint 8.35.1
 - **Package Manager**: npm (Node.js 18+ required)
+- **IDE**: VS Code with custom workspace settings
 - **Version Control**: Git with automated staging workflow
 
 ## Features

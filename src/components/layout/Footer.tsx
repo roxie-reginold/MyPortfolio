@@ -42,7 +42,7 @@ const Footer = () => {
                 GitHub
               </a>
               <a 
-                href="mailto:roxie.reginold@example.com"
+                href="mailto:roxie.reginold@torontomu.ca"
                 className="social-link"
               >
                 Email

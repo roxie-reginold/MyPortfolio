@@ -3,19 +3,61 @@ import type { Experience, Education } from '../types/Experience';
 export const experiences: Experience[] = [
   {
     id: 'rbc-data-scientist',
-    title: 'Data Scientist',
-    company: 'RBC (Royal Bank of Canada)',
+    title: 'Data Scientist Intern',
+    company: 'Royal Bank of Canada',
     location: 'Toronto, ON',
     startDate: 'Jan 2025',
     endDate: 'Present',
     description: [
-      'Conducting research on AI-assisted coding tools to boost developer productivity',
-      'Evaluating OpenAI and Anthropic LLMs for enterprise development workflows',
-      'Building GenAI demos and proof-of-concepts for internal teams',
-      'Implementing prompt engineering strategies for agentic systems'
+      'Researched and evaluated 15+ Agentic AI developer tools that leveraged OpenAI, Anthropic, Google LLMs using SWE-bench tasks, boosting developer productivity by 30% through AI-assisted coding',
+      'Collaborated with DevOps and Insurance teams on PoCs to create use cases on AI-enhanced development workflows, ensuring full compliance with RBC production standards and informing strategic tool adoption',
+      'Delivered iterative GenAI demos using Python, Crew AI, and LLMs in an Agile lab setting, enabling leadership to validate and refine experimental workflows and expand RBC\'s internal AI capabilities',
+      'Created an internal "vibe-coding" patterns and anti-patterns repository, documenting best practices for LLM prompt design and now referenced by engineers to standardize AI-assisted development'
     ],
-    skills: ['Python', 'OpenAI API', 'Anthropic Claude', 'Data Analysis', 'AI/ML', 'Prompt Engineering'],
-    achievements: ['Boosted developer productivity by 30% through AI-assisted coding research']
+    skills: ['Python', 'OpenAI API', 'Anthropic Claude', 'Google LLMs', 'Crew AI', 'Data Analysis', 'AI/ML', 'Prompt Engineering', 'SWE-bench'],
+    achievements: ['Boosted developer productivity by 30% through AI-assisted coding research', 'Created standardized AI development patterns repository']
+  },
+  {
+    id: 'rbc-software-developer-2024',
+    title: 'Software Developer Intern',
+    company: 'Royal Bank of Canada',
+    location: 'Toronto, ON',
+    startDate: 'May 2024',
+    endDate: 'Aug 2024',
+    description: [
+      'Refactored end deployed 5 Maven Spring Boot services to the Red Hat OpenShift 4 Platform through Jenkins CI/CD pipelines, increasing system performance by 20% and reducing downtime by 15%',
+      'Collaborated with DevOps, Maintenance, and Quality Assurance teams, to implement best practices, contribute to code reviews and ensure adherence to high-quality standards for RESTful API development'
+    ],
+    skills: ['Java', 'Maven', 'Spring Boot', 'Red Hat OpenShift', 'Jenkins', 'CI/CD', 'RESTful APIs', 'DevOps'],
+    achievements: ['Increased system performance by 20% and reduced downtime by 15%', 'Successfully deployed 5 production services']
+  },
+  {
+    id: 'rbc-software-developer-2023',
+    title: 'Software Developer Intern',
+    company: 'Royal Bank of Canada',
+    location: 'Toronto, ON',
+    startDate: 'Sep 2023',
+    endDate: 'Dec 2023',
+    description: [
+      'Developed Python scripts with the DevOps team to leverage Jenkins and GitHub API to automate weekly email notifications, reducing unused Git branches in GitHub organizations by over 50%',
+      'Delivered an introductory presentation on GitHub Actions for the team, contributing to the team\'s understanding of modern DevOps practices and fostering continuous integration awareness'
+    ],
+    skills: ['Python', 'Jenkins', 'GitHub API', 'GitHub Actions', 'DevOps', 'Automation'],
+    achievements: ['Reduced unused Git branches by over 50%', 'Improved team DevOps knowledge through presentations']
+  },
+  {
+    id: 'equinix-data-analyst',
+    title: 'Data Analyst Intern',
+    company: 'Equinix',
+    location: 'Toronto, ON',
+    startDate: 'June 2023',
+    endDate: 'Sep 2023',
+    description: [
+      'Developed dynamic Smartsheet dashboards to track and analyze customer migration progress, providing real-time updates on key metrics and improving decision-making and project efficiency by 30%',
+      'Enhanced overall working group efficiency by identifying process gaps in site divestiture, applying innovative Smartsheet solutions to improve scalability across regional teams'
+    ],
+    skills: ['Smartsheet', 'Data Analysis', 'Dashboard Development', 'Process Improvement', 'Project Management'],
+    achievements: ['Improved decision-making and project efficiency by 30%', 'Enhanced working group efficiency through process optimization']
   },
   {
     id: 'tmu-peer-advisor',

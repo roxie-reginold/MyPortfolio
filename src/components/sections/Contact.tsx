@@ -14,6 +14,20 @@ const Contact = () => {
             </p>
             <div className="contact-links">
               <a 
+                href="tel:+16474039422" 
+                className="contact-link"
+              >
+                <span className="link-icon">📞</span>
+                +1 (647) 403-9422
+              </a>
+              <a 
+                href="mailto:roxie.reginold@torontomu.ca" 
+                className="contact-link"
+              >
+                <span className="link-icon">📧</span>
+                roxie.reginold@torontomu.ca
+              </a>
+              <a 
                 href="https://www.linkedin.com/in/roxie-reginold/" 
                 className="contact-link"
                 target="_blank" 
@@ -32,11 +46,13 @@ const Contact = () => {
                 GitHub
               </a>
               <a 
-                href="mailto:roxie.reginold@example.com" 
+                href="https://devpost.com/roxie-reginold" 
                 className="contact-link"
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                <span className="link-icon">📧</span>
-                Email
+                <span className="link-icon">🏆</span>
+                DevPost
               </a>
             </div>
           </div>
